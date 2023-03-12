@@ -128,17 +128,18 @@ a {
 }
 
 .hero {
+    position: relative;
     margin-top: 128px;
     padding-bottom: 80px;
     width: 1531px;
     display: flex;
     justify-content: space-between;
-    margin-left: auto;
     max-width: calc(100% - 48px);
 }
 
 .hero .content-block {
-    width: 34%;
+    margin-top: 27px;
+    width: 47%;
 }
 
 .hero .desc-b {
@@ -150,7 +151,14 @@ a {
 }
 
 .hero .desc {
+    width: 88%;
     margin-top: 22px;
+}
+
+.hero .image {
+    position: absolute;
+    top: 0;
+    right: -427px;
 }
 
 .hero .image img {
@@ -247,7 +255,7 @@ a {
     height: 29px;
     background: #ffffff;
     border-radius: 50%;
-    color: #C4C4C4;
+    color: #c4c4c4;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -258,5 +266,241 @@ a {
     background: #151515;
     color: #fff;
     cursor: pointer;
-    transition: ease .5s;
+    transition: ease 0.5s;
+}
+
+.slides .lists {
+    margin-top: 46px;
+    display: flex;
+    overflow: hidden;
+}
+
+.slides .lists .items {
+    padding-top: 30px;
+    display: flex;
+    gap: 32px;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slides .lists .item {
+    position: relative;
+    width: calc((100% / 4) - 32px);
+    background: #f7f7f7;
+    border-radius: 24px;
+    padding: 20px 30px;
+}
+
+.slides .lists .food {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    color: #171717;
+}
+
+.slides .lists .food-price,
+.slides .lists .food-start {
+    display: block;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.3;
+}
+
+.slides .lists .food-start {
+    margin-top: 18px;
+    color: #969696;
+}
+
+.slides .lists .food-price {
+    color: #ff4415;
+}
+
+.slides .lists .item-img img {
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    width: 130px;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Service */
+
+.service {
+    padding: 120px 0 110px;
+}
+
+.content-top {
+    text-align: center;
+    width: 38%;
+    margin: 0 auto;
+}
+
+.content-top .desc.lv3 {
+    margin-top: 8px;
+}
+
+.service .lists {
+    margin: 55px auto 0;
+    display: flex;
+    width: 88%;
+    gap: 100px;
+}
+
+.service .item {
+    flex: 1;
+}
+
+.service .item figure {
+    display: flex;
+    justify-content: center;
+}
+
+.service .item-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.service .title {
+    margin: 40px 0 24px;
+    font-weight: 700;
+    font-size: 2.6rem;
+    line-height: 0.92;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: #171717;
+}
+
+.service .desc.lv2 {
+    text-align: center;
+}
+
+/* Feature */
+.feature {
+    display: flex;
+    justify-content: center;
+}
+
+/* Popular */
+.popular .lists {
+    margin-top: 10px;
+}
+
+.popular .items {
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+}
+
+.popular .item {
+    flex: 1;
+    padding: 18px 21px 21px 28px;
+    border: 1.2px solid #efefef;
+    border-radius: 24px;
+}
+
+.popular .item:hover {
+    border: transparent;
+    box-shadow: 0px 46px 100px -31px rgba(0, 0, 0, 0.1);
+}
+
+.popular .item-head {
+    display: flex;
+    justify-content: center;
+}
+
+.popular .item-head img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.popular .item-body {
+    margin-top: 10px;
+}
+
+.popular .stars {
+    display: flex;
+}
+
+.popular .title {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #181818;
+}
+
+.popular .desc {
+    margin-top: 12px;
+}
+
+.popular .item-footer {
+    margin-top: 17px;
+    display: flex;
+}
+
+.popular .price {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #060606;
+}
+
+.popular .heart,
+.popular .share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.popular .heart {
+    margin-left: auto;
+    background: #ff4415;
+}
+
+.popular .share {
+    background: #171717;
+    margin-left: 10px;
+}
+
+.popular-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.popular-btn .btn {
+    margin-top: 55px;
+    width: 188px;
+    border: none;
+    outline: none;
+    padding: 12px 0;
+    background: linear-gradient(101.98deg, #46c266 41.25%, #2fb652 98.64%);
+    box-shadow: 0px 10px 20px -10px rgba(58, 186, 90, 0.16);
+    border-radius: 16px;
+    font-size: 16px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.popular-btn .btn span:last-child {
+    margin-left: 14px;
+    width: 38px;
+    height: 38px;
+    background: #fff;
+    box-shadow: 0px 10px 20px -8px rgba(185, 66, 42, 0.19);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
